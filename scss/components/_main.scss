@@ -2,31 +2,27 @@
 
 body{
 	background-color: $background;
-	font-family: $helvetica;
+	font-family: $lato;
 }
 
-.primary-btn{
-	@include button($primary, $primary-dark, #fff);
+*, *:before, *:after {
+	box-sizing: inherit;
 }
 
-.secondary-btn{
-	@include button($secondary, $secondary-dark, #fff);
-}
-.border{
-	border: 1px solid #ccc;
-	// you can nest elements/selectors to target them more specifically 
-	p{
-		color: purple;
-	}
-}
-
-a{
-	border: 1px solid #ccc;
-	&:hover{
-		border: 1px solid #ccc;
-	}
+h1{
+  text-align: center;
+  font-size: 2em;
+  color: $primary;
+  font-weight: 700;
+  padding: 1.5em;
+  letter-spacing: 3px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 3.125em;
 }
 
-ul{
-	@extend .border;
+ /* SERVICES */
+.services{
+  width: 100%;
+  display: block;
 }
