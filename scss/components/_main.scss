@@ -1,4 +1,13 @@
 // Main
+html {
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -o-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  margin: 0;
+  padding: 0;
+}
 
 body{
 	background-color: $background;
@@ -26,3 +35,43 @@ h1{
   width: 100%;
   display: block;
 }
+
+/* ICONS */
+.icons{
+	@include icons;
+
+	figcaption{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    padding: 1em;
+    font-size: .9em;
+    line-height: 1.5em;
+    font-weight: 300;
+    color: $primary-dark;
+  }
+
+}
+  .icons-border{
+    display: block;
+    width: 80px;
+    height: 2px;
+    background: $primary-dark;
+    opacity: 0.8;
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .icons:hover figcaption{
+    opacity: 1;
+  }
+
+  .icons figcaption h6{
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: -.3em;
+    font-weight: 700;
+    color: $primary-dark;
+  }

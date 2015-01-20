@@ -11,7 +11,9 @@ into an unprefixed.scss file */
 @import 'mixins';
 
 // Component rules
+@import 'components/reset';
+@import 'components/iconic-font';
+
 @import 'components/main';
 @import 'components/grid';
 @import 'components/typography';
-@import 'components/iconic-font';

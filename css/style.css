@@ -9,16 +9,147 @@ into an unprefixed.scss file */
 	font-stacks, or any css value you think you might want to reuse. 
 
 	SASS uses the '$' symbol to declare variables. */
-/* line 3, /Users/emma-lee/Documents/Year 4/Semester Two/Web Development V/exercise-2-scss/scss/components/main */
+/**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ */
+/* Paul Irish's Padding Fix
+http://paulirish.com/2012/box-sizing-border-box-ftw
+*/
+/* line 10, /Users/emma-lee/Documents/Year 4/Semester Two/Web Development V/exercise-2-scss/scss/components/reset */
+* {
+  box-sizing: border-box; }
+
+/* line 26, /Users/emma-lee/Documents/Year 4/Semester Two/Web Development V/exercise-2-scss/scss/components/reset */
+html, body, div, span, applet, object, iframe, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+/* line 36, /Users/emma-lee/Documents/Year 4/Semester Two/Web Development V/exercise-2-scss/scss/components/reset */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, main {
+  display: block; }
+
+/* line 39, /Users/emma-lee/Documents/Year 4/Semester Two/Web Development V/exercise-2-scss/scss/components/reset */
+body {
+  line-height: 1; }
+
+/* line 42, /Users/emma-lee/Documents/Year 4/Semester Two/Web Development V/exercise-2-scss/scss/components/reset */
+ol, ul {
+  list-style: none; }
+
+/* line 45, /Users/emma-lee/Documents/Year 4/Semester Two/Web Development V/exercise-2-scss/scss/components/reset */
+blockquote, q {
+  quotes: none; }
+
+/* line 49, /Users/emma-lee/Documents/Year 4/Semester Two/Web Development V/exercise-2-scss/scss/components/reset */
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+/* line 53, /Users/emma-lee/Documents/Year 4/Semester Two/Web Development V/exercise-2-scss/scss/components/reset */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: 'iconic-font';
+  src: url('../../font/iconic-font.eot?33603664');
+  src: url('../../font/iconic-font.eot?33603664#iefix') format('embedded-opentype'), url('../../font/iconic-font.woff?33603664') format('woff'), url('../../font/iconic-font.ttf?33603664') format('truetype'), url('../.. s/font/iconic-font.svg?33603664#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal; }
+
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'iconic-font';
+    src: url('../font/iconic-font.svg?33603664#iconic-font') format('svg');
+  }
+}
+*/
+/* line 22, /Users/emma-lee/Documents/Year 4/Semester Two/Web Development V/exercise-2-scss/scss/components/iconic-font */
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "iconic-font";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 3em;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  text-align: center;
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */ }
+
+/* line 51, /Users/emma-lee/Documents/Year 4/Semester Two/Web Development V/exercise-2-scss/scss/components/iconic-font */
+.icon-iconic-tree:before {
+  content: '\e800'; }
+
+/* '' */
+/* line 52, /Users/emma-lee/Documents/Year 4/Semester Two/Web Development V/exercise-2-scss/scss/components/iconic-font */
+.icon-iconic-binoculars:before {
+  content: '\e801'; }
+
+/* '' */
+/* line 53, /Users/emma-lee/Documents/Year 4/Semester Two/Web Development V/exercise-2-scss/scss/components/iconic-font */
+.icon-iconic-compass:before {
+  content: '\e802'; }
+
+/* '' */
+/* line 54, /Users/emma-lee/Documents/Year 4/Semester Two/Web Development V/exercise-2-scss/scss/components/iconic-font */
+.icon-iconic-compass:before {
+  content: '\e803'; }
+
+/* '' */
+/* line 55, /Users/emma-lee/Documents/Year 4/Semester Two/Web Development V/exercise-2-scss/scss/components/iconic-font */
+.icon-iconic-mountain:before {
+  content: '\e804'; }
+
+/* '' */
+/* line 56, /Users/emma-lee/Documents/Year 4/Semester Two/Web Development V/exercise-2-scss/scss/components/iconic-font */
+.icon-iconic-paddles:before {
+  content: '\e805'; }
+
+/* '' */
+/* line 57, /Users/emma-lee/Documents/Year 4/Semester Two/Web Development V/exercise-2-scss/scss/components/iconic-font */
+.icon-iconic-tent:before {
+  content: '\e806'; }
+
+/* '' */
+/* line 2, /Users/emma-lee/Documents/Year 4/Semester Two/Web Development V/exercise-2-scss/scss/components/main */
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -o-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  margin: 0;
+  padding: 0; }
+
+/* line 12, /Users/emma-lee/Documents/Year 4/Semester Two/Web Development V/exercise-2-scss/scss/components/main */
 body {
   background-color: #FFF9F3;
   font-family: 'Lato', sans-serif; }
 
-/* line 8, /Users/emma-lee/Documents/Year 4/Semester Two/Web Development V/exercise-2-scss/scss/components/main */
+/* line 17, /Users/emma-lee/Documents/Year 4/Semester Two/Web Development V/exercise-2-scss/scss/components/main */
 *, *:before, *:after {
   box-sizing: inherit; }
 
-/* line 12, /Users/emma-lee/Documents/Year 4/Semester Two/Web Development V/exercise-2-scss/scss/components/main */
+/* line 21, /Users/emma-lee/Documents/Year 4/Semester Two/Web Development V/exercise-2-scss/scss/components/main */
 h1 {
   text-align: center;
   font-size: 2em;
@@ -31,10 +162,57 @@ h1 {
   margin-top: 3.125em; }
 
 /* SERVICES */
-/* line 25, /Users/emma-lee/Documents/Year 4/Semester Two/Web Development V/exercise-2-scss/scss/components/main */
+/* line 34, /Users/emma-lee/Documents/Year 4/Semester Two/Web Development V/exercise-2-scss/scss/components/main */
 .services {
   width: 100%;
   display: block; }
+
+/* ICONS */
+/* line 40, /Users/emma-lee/Documents/Year 4/Semester Two/Web Development V/exercise-2-scss/scss/components/main */
+.icons {
+  color: #384001;
+  position: relative;
+  padding-bottom: 0.5em;
+  text-align: center;
+  opacity: 0.8; }
+  /* line 10, /Users/emma-lee/Documents/Year 4/Semester Two/Web Development V/exercise-2-scss/scss/mixins */
+  .icons:hover {
+    opacity: 1;
+    color: #BCBF60; }
+  /* line 43, /Users/emma-lee/Documents/Year 4/Semester Two/Web Development V/exercise-2-scss/scss/components/main */
+  .icons figcaption {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    padding: 1em;
+    font-size: 0.9em;
+    line-height: 1.5em;
+    font-weight: 300;
+    color: #384001; }
+
+/* line 56, /Users/emma-lee/Documents/Year 4/Semester Two/Web Development V/exercise-2-scss/scss/components/main */
+.icons-border {
+  display: block;
+  width: 80px;
+  height: 2px;
+  background: #384001;
+  opacity: 0.8;
+  margin: 0 auto;
+  margin-top: 15px;
+  margin-bottom: 15px; }
+
+/* line 67, /Users/emma-lee/Documents/Year 4/Semester Two/Web Development V/exercise-2-scss/scss/components/main */
+.icons:hover figcaption {
+  opacity: 1; }
+
+/* line 71, /Users/emma-lee/Documents/Year 4/Semester Two/Web Development V/exercise-2-scss/scss/components/main */
+.icons figcaption h6 {
+  text-align: center;
+  font-size: 1.2em;
+  margin-bottom: -0.3em;
+  font-weight: 700;
+  color: #384001; }
 
 /* GRIDIFIER */
 /* line 2, /Users/emma-lee/Documents/Year 4/Semester Two/Web Development V/exercise-2-scss/scss/components/grid */
@@ -459,81 +637,3 @@ sub {
   padding-right: 0.25rem; }
 
 /* END - TYPOGRAFIER */
-@font-face {
-  font-family: 'iconic-font';
-  src: url('../font/iconic-font.eot?33603664');
-  src: url('../font/iconic-font.eot?33603664#iefix') format('embedded-opentype'), url('../font/iconic-font.woff?33603664') format('woff'), url('../font/iconic-font.ttf?33603664') format('truetype'), url('../font/iconic-font.svg?33603664#fontello') format('svg');
-  font-weight: normal;
-  font-style: normal; }
-
-/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
-/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
-/*
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-  @font-face {
-    font-family: 'iconic-font';
-    src: url('../font/iconic-font.svg?33603664#iconic-font') format('svg');
-  }
-}
-*/
-/* line 22, /Users/emma-lee/Documents/Year 4/Semester Two/Web Development V/exercise-2-scss/scss/components/iconic-font */
-[class^="icon-"]:before, [class*=" icon-"]:before {
-  font-family: "iconic-font";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 3em;
-  speak: none;
-  display: inline-block;
-  text-decoration: inherit;
-  width: 1em;
-  margin-right: 0.2em;
-  text-align: center;
-  /* opacity: .8; */
-  /* For safety - reset parent styles, that can break glyph codes*/
-  font-variant: normal;
-  text-transform: none;
-  /* fix buttons height, for twitter bootstrap */
-  line-height: 1em;
-  /* Animation center compensation - margins should be symmetric */
-  /* remove if not needed */
-  margin-left: 0.2em
-  /* you can be more comfortable with increased icons size */
-  /* font-size: 120%; */
-  /* Uncomment for 3D effect */
-  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */ }
-
-/* line 54, /Users/emma-lee/Documents/Year 4/Semester Two/Web Development V/exercise-2-scss/scss/components/iconic-font */
-.icon-iconic-tree:before {
-  content: '\e800'; }
-
-/* '' */
-/* line 55, /Users/emma-lee/Documents/Year 4/Semester Two/Web Development V/exercise-2-scss/scss/components/iconic-font */
-.icon-iconic-binoculars:before {
-  content: '\e801'; }
-
-/* '' */
-/* line 56, /Users/emma-lee/Documents/Year 4/Semester Two/Web Development V/exercise-2-scss/scss/components/iconic-font */
-.icon-iconic-compass:before {
-  content: '\e802'; }
-
-/* '' */
-/* line 57, /Users/emma-lee/Documents/Year 4/Semester Two/Web Development V/exercise-2-scss/scss/components/iconic-font */
-.icon-iconic-compass:before {
-  content: '\e803'; }
-
-/* '' */
-/* line 58, /Users/emma-lee/Documents/Year 4/Semester Two/Web Development V/exercise-2-scss/scss/components/iconic-font */
-.icon-iconic-mountain:before {
-  content: '\e804'; }
-
-/* '' */
-/* line 59, /Users/emma-lee/Documents/Year 4/Semester Two/Web Development V/exercise-2-scss/scss/components/iconic-font */
-.icon-iconic-paddles:before {
-  content: '\e805'; }
-
-/* '' */
-/* line 60, /Users/emma-lee/Documents/Year 4/Semester Two/Web Development V/exercise-2-scss/scss/components/iconic-font */
-.icon-iconic-tent:before {
-  content: '\e806'; }
-
-/* '' */
