@@ -57,9 +57,9 @@ table {
   border-spacing: 0; }
 
 @font-face {
-  font-family: 'iconic-font';
-  src: url('../../font/iconic-font.eot?33603664');
-  src: url('../../font/iconic-font.eot?33603664#iefix') format('embedded-opentype'), url('../../font/iconic-font.woff?33603664') format('woff'), url('../../font/iconic-font.ttf?33603664') format('truetype'), url('../.. s/font/iconic-font.svg?33603664#fontello') format('svg');
+  font-family: 'fontello';
+  src: url('../font/fontello.eot?78775027');
+  src: url('../font/fontello.eot?78775027#iefix') format('embedded-opentype'), url('../font/fontello.woff?78775027') format('woff'), url('../font/fontello.ttf?78775027') format('truetype'), url('../font/fontello.svg?78775027#fontello') format('svg');
   font-weight: normal;
   font-style: normal; }
 
@@ -68,69 +68,71 @@ table {
 /*
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
-    font-family: 'iconic-font';
-    src: url('../font/iconic-font.svg?33603664#iconic-font') format('svg');
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?78775027#fontello') format('svg');
   }
 }
 */
 /* line 22, /Users/emma-lee/Documents/Year 4/Semester Two/Web Development V/exercise-2-scss/scss/components/iconic-font */
 [class^="icon-"]:before, [class*=" icon-"]:before {
-  font-family: "iconic-font";
+  font-family: "fontello";
   font-style: normal;
   font-weight: normal;
-  font-size: 3em;
   speak: none;
   display: inline-block;
   text-decoration: inherit;
   width: 1em;
+  margin-right: 0.2em;
   text-align: center;
+  /* opacity: .8; */
   /* For safety - reset parent styles, that can break glyph codes*/
   font-variant: normal;
   text-transform: none;
   /* fix buttons height, for twitter bootstrap */
-  line-height: 1em
+  line-height: 1em;
   /* Animation center compensation - margins should be symmetric */
   /* remove if not needed */
+  margin-left: 0.2em
   /* you can be more comfortable with increased icons size */
   /* font-size: 120%; */
   /* Uncomment for 3D effect */
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */ }
 
-/* line 51, /Users/emma-lee/Documents/Year 4/Semester Two/Web Development V/exercise-2-scss/scss/components/iconic-font */
-.icon-iconic-tree:before {
-  content: '\e800'; }
-
-/* '' */
-/* line 52, /Users/emma-lee/Documents/Year 4/Semester Two/Web Development V/exercise-2-scss/scss/components/iconic-font */
-.icon-iconic-binoculars:before {
-  content: '\e801'; }
-
-/* '' */
 /* line 53, /Users/emma-lee/Documents/Year 4/Semester Two/Web Development V/exercise-2-scss/scss/components/iconic-font */
-.icon-iconic-compass:before {
-  content: '\e802'; }
+.icon-iconic-tree:before {
+  content: '\e80f'; }
 
-/* '' */
+/* '' */
 /* line 54, /Users/emma-lee/Documents/Year 4/Semester Two/Web Development V/exercise-2-scss/scss/components/iconic-font */
-.icon-iconic-compass:before {
-  content: '\e803'; }
+.icon-iconic-binoculars:before {
+  content: '\e810'; }
 
-/* '' */
+/* '' */
 /* line 55, /Users/emma-lee/Documents/Year 4/Semester Two/Web Development V/exercise-2-scss/scss/components/iconic-font */
-.icon-iconic-mountain:before {
-  content: '\e804'; }
+.icon-iconic-compass:before {
+  content: '\e811'; }
 
-/* '' */
+/* '' */
 /* line 56, /Users/emma-lee/Documents/Year 4/Semester Two/Web Development V/exercise-2-scss/scss/components/iconic-font */
-.icon-iconic-paddles:before {
-  content: '\e805'; }
+.icon-iconic-leaf:before {
+  content: '\e812'; }
 
-/* '' */
+/* '' */
 /* line 57, /Users/emma-lee/Documents/Year 4/Semester Two/Web Development V/exercise-2-scss/scss/components/iconic-font */
-.icon-iconic-tent:before {
-  content: '\e806'; }
+.icon-iconic-mountain:before {
+  content: '\e813'; }
 
-/* '' */
+/* '' */
+/* line 58, /Users/emma-lee/Documents/Year 4/Semester Two/Web Development V/exercise-2-scss/scss/components/iconic-font */
+.icon-iconic-paddles:before {
+  content: '\e814'; }
+
+/* '' */
+/* line 59, /Users/emma-lee/Documents/Year 4/Semester Two/Web Development V/exercise-2-scss/scss/components/iconic-font */
+.icon-iconic-tent:before {
+  content: '\e815'; }
+
+/* '' */
 /* line 2, /Users/emma-lee/Documents/Year 4/Semester Two/Web Development V/exercise-2-scss/scss/components/main */
 html {
   -ms-text-size-adjust: 100%;
