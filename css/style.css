@@ -77,12 +77,13 @@ table {
 [class^="icon-"]:before, [class*=" icon-"]:before {
   font-family: "iconic-font";
   font-style: normal;
+  font-size: 3em;
   font-weight: normal;
   speak: none;
   display: inline-block;
   text-decoration: inherit;
-  min-width: 1em;
-  margin-right: -1.4em;
+  width: 1em;
+  margin-right: -0.3em;
   text-align: center;
   /* opacity: .8; */
   /* For safety - reset parent styles, that can break glyph codes*/
@@ -98,37 +99,37 @@ table {
   /* Uncomment for 3D effect */
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */ }
 
-/* line 53, /Users/emma-lee/Documents/Year 4/Semester Two/Web Development V/exercise-2-scss/scss/components/iconic-font */
+/* line 54, /Users/emma-lee/Documents/Year 4/Semester Two/Web Development V/exercise-2-scss/scss/components/iconic-font */
 .icon-iconic-tree:before {
   content: '\e80f'; }
 
 /* '' */
-/* line 54, /Users/emma-lee/Documents/Year 4/Semester Two/Web Development V/exercise-2-scss/scss/components/iconic-font */
+/* line 55, /Users/emma-lee/Documents/Year 4/Semester Two/Web Development V/exercise-2-scss/scss/components/iconic-font */
 .icon-iconic-binoculars:before {
   content: '\e810'; }
 
 /* '' */
-/* line 55, /Users/emma-lee/Documents/Year 4/Semester Two/Web Development V/exercise-2-scss/scss/components/iconic-font */
+/* line 56, /Users/emma-lee/Documents/Year 4/Semester Two/Web Development V/exercise-2-scss/scss/components/iconic-font */
 .icon-iconic-compass:before {
   content: '\e811'; }
 
 /* '' */
-/* line 56, /Users/emma-lee/Documents/Year 4/Semester Two/Web Development V/exercise-2-scss/scss/components/iconic-font */
+/* line 57, /Users/emma-lee/Documents/Year 4/Semester Two/Web Development V/exercise-2-scss/scss/components/iconic-font */
 .icon-iconic-leaf:before {
   content: '\e812'; }
 
 /* '' */
-/* line 57, /Users/emma-lee/Documents/Year 4/Semester Two/Web Development V/exercise-2-scss/scss/components/iconic-font */
+/* line 58, /Users/emma-lee/Documents/Year 4/Semester Two/Web Development V/exercise-2-scss/scss/components/iconic-font */
 .icon-iconic-mountain:before {
   content: '\e813'; }
 
 /* '' */
-/* line 58, /Users/emma-lee/Documents/Year 4/Semester Two/Web Development V/exercise-2-scss/scss/components/iconic-font */
+/* line 59, /Users/emma-lee/Documents/Year 4/Semester Two/Web Development V/exercise-2-scss/scss/components/iconic-font */
 .icon-iconic-paddles:before {
   content: '\e814'; }
 
 /* '' */
-/* line 59, /Users/emma-lee/Documents/Year 4/Semester Two/Web Development V/exercise-2-scss/scss/components/iconic-font */
+/* line 60, /Users/emma-lee/Documents/Year 4/Semester Two/Web Development V/exercise-2-scss/scss/components/iconic-font */
 .icon-iconic-tent:before {
   content: '\e815'; }
 

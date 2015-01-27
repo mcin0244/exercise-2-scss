@@ -22,13 +22,14 @@
  [class^="icon-"]:before, [class*=" icon-"]:before {
   font-family: "iconic-font";
   font-style: normal;
+  font-size: 3em;
   font-weight: normal;
   speak: none;
  
   display: inline-block;
   text-decoration: inherit;
-  min-width: 1em;
-  margin-right: -1.4em;
+  width: 1em;
+  margin-right: -.3em;
   text-align: center;
   /* opacity: .8; */
  
