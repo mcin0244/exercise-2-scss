@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'iconic-font';
-  src: url('../font/iconic-font.eot?78775027');
-  src: url('../font/iconic-font.eot?78775027#iefix') format('embedded-opentype'),
-       url('../font/iconic-font.woff?78775027') format('woff'),
-       url('../font/iconic-font.ttf?78775027') format('truetype'),
-       url('../font/iconic-font.svg?78775027#iconic-font') format('svg');
+  src: url('../../font/iconic-font.eot?78775027');
+  src: url('../../font/iconic-font.eot?78775027#iefix') format('embedded-opentype'),
+       url('../../font/iconic-font.woff?78775027') format('woff'),
+       url('../../font/iconic-font.ttf?78775027') format('truetype'),
+       url('../../font/iconic-font.svg?78775027#iconic-font') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -14,7 +14,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'iconic-font';
-    src: url('../font/iconic-font.svg?78775027#iconic-font') format('svg');
+    src: url('../../font/iconic-font.svg?78775027#iconic-font') format('svg');
   }
 }
 */
