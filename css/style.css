@@ -57,9 +57,9 @@ table {
   border-spacing: 0; }
 
 @font-face {
-  font-family: 'fontello';
-  src: url('../font/fontello.eot?78775027');
-  src: url('../font/fontello.eot?78775027#iefix') format('embedded-opentype'), url('../font/fontello.woff?78775027') format('woff'), url('../font/fontello.ttf?78775027') format('truetype'), url('../font/fontello.svg?78775027#fontello') format('svg');
+  font-family: 'iconic-font';
+  src: url('../../font/iconic-font.eot?33603664');
+  src: url('../../font/iconic-font.eot?33603664#iefix') format('embedded-opentype'), url('../../font/iconic-font.woff?33603664') format('woff'), url('../../font/iconic-font.ttf?33603664') format('truetype'), url('../.. s/font/iconic-font.svg?33603664#fontello') format('svg');
   font-weight: normal;
   font-style: normal; }
 
@@ -75,14 +75,14 @@ table {
 */
 /* line 22, /Users/emma-lee/Documents/Year 4/Semester Two/Web Development V/exercise-2-scss/scss/components/iconic-font */
 [class^="icon-"]:before, [class*=" icon-"]:before {
-  font-family: "fontello";
+  font-family: "iconic-font";
   font-style: normal;
   font-weight: normal;
   speak: none;
   display: inline-block;
   text-decoration: inherit;
-  width: 1em;
-  margin-right: 0.2em;
+  min-width: 1em;
+  margin-right: -1.4em;
   text-align: center;
   /* opacity: .8; */
   /* For safety - reset parent styles, that can break glyph codes*/
